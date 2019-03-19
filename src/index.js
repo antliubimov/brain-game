@@ -5,12 +5,13 @@ const printRules = () => (rules) ? console.log(rules) : console.log('');
 
 const gameplay = (rules, generateAnswer) => {
   printWelcome();
-  printRules();
+  printRules(rules);
   console.log('');
 
   const userName = readlineSync.question('What your name?', {defaultInput: 'Noname'});
   console.log(`Hi, ${userName}!`);
   console.log('');
+
 
 
 }
